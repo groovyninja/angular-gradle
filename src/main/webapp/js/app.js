@@ -6,6 +6,20 @@
         this.products = gems;
     });
 
+    app.controller('TabController', function () {
+
+        this.tab = 1;
+
+        this.setTab = function(tab) {
+            this.tab = tab;
+        };
+
+        this.isSet = function(tab) {
+            return this.tab === tab;
+        };
+
+    });
+
     var gems = [
         {
             name: 'Azurite',
@@ -16,9 +30,9 @@
             color: '#CCC',
             faces: 14,
             images: [
-                /*"img/gem-02.jpeg",
+                "img/gem-02.jpeg",
                 "img/gem-05.jpeg",
-                "img/gem-09.jpeg"*/
+                "img/gem-09.jpeg"
             ],
             reviews: [
                 {
