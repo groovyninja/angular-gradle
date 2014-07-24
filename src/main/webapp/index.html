@@ -7,8 +7,16 @@
     <script src="js/angular.min.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
 </head>
-<body ng-controller="StoreController as store">
-    {{ store.product.name }}
-    <em>{{ store.product.price | currency}}</em>
+
+<body class="container" ng-controller="StoreController as store">
+
+<div class="product row" ng-repeat="product in store.products">
+    <h3>
+        {{ product.name }}
+        <em class="pull-right">{{ product.price | currency}}</em>
+    </h3>
+</div>
+
 </body>
+
 </html>
