@@ -30,6 +30,19 @@
 
     });
 
+    app.controller('ReviewController', function() {
+
+        this.review = {};
+
+        this.addReview = function(product) {
+            // сохраняем новый отзыв в массив отзывов в текущем продукте
+            product.reviews.push(this.review);
+            // обнуляем отзыв, отображаемый в полях формы
+            this.review = {};
+        }
+
+    });
+
     var gems = [
         {
             name: 'Azurite',
