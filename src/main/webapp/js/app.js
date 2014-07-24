@@ -16,9 +16,9 @@
             color: '#CCC',
             faces: 14,
             images: [
-                "img/gem-02.jpeg",
+                /*"img/gem-02.jpeg",
                 "img/gem-05.jpeg",
-                "img/gem-09.jpeg"
+                "img/gem-09.jpeg"*/
             ],
             reviews: [
                 {
