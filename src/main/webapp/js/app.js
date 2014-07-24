@@ -35,6 +35,8 @@
         this.review = {};
 
         this.addReview = function(product) {
+            // Добавляем отзыву дату сохранения прежде чем сохранить
+            this.review.createdOn = Date.now();
             // сохраняем новый отзыв в массив отзывов в текущем продукте
             product.reviews.push(this.review);
             // обнуляем отзыв, отображаемый в полях формы
